@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Access Denied</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff4e50, #f9d423);
+      color: white;
+      text-align: center;
+      padding: 100px;
+    }
+    .box {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Access Denied</h1>
+    <p>Sorry, only admins can create events.</p>
+    <p>You are logged in as: <strong>{{ role }}</strong></p>
+    <p><a href="/events">Go back to Events</a></p>
+  </div>
+</body>
+</html>
