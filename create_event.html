@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Event</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Create Event</h2>
+    <form action="/create" method="POST">
+      <input type="text" name="title" placeholder="Event Title" required />
+      <input type="date" name="date" required />
+      <input type="text" name="location" placeholder="Location" required />
+      <textarea name="description" placeholder="Description" required></textarea>
+      <input type="email" name="email" placeholder="Your Email" required />
+      <button type="submit">Create</button>
+    </form>
+  </div>
+</body>
+</html>
