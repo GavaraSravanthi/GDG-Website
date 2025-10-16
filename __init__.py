@@ -35,5 +35,6 @@ def create_app():
     from .api import api
     app.register_blueprint(main)
     app.register_blueprint(api)
-
     return app
+
+    #return app
